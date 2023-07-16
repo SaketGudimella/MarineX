@@ -30,4 +30,7 @@ For detailed installation and setup instructions, please refer to the project's 
 
 This project is licensed under the MIT License. You are free to modify, distribute, and use the code for personal and commercial purposes.
 
+## Contributing
+
+Contributions to enhance the system's functionality, performance, and usability are welcome.
 
