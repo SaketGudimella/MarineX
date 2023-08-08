@@ -40,7 +40,7 @@ EmailFlow is an optimal email management suite designed to streamline your email
   - Git (for code versioning and collaboration)
   
 - **Deployment:**
-  - Heroku (for hosting the application)
+  - AWS (for hosting the application)
 
 - **Project Management and Collaboration:**
   - GitHub (for code hosting, issue tracking, and collaboration)
