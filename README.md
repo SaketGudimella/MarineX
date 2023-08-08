@@ -23,7 +23,6 @@ EmailFlow is an optimal email management suite designed to streamline your email
 
 - **Backend:**
   - Python (for backend logic)
-  - Flask (web framework)
   
 - **Natural Language Processing (NLP):**
   - NLTK (Natural Language Toolkit)
