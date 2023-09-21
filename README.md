@@ -59,11 +59,6 @@ EmailFlow is an optimal email management suite designed to streamline your email
 1. Clone this repository to your local machine.
 2. Install the required dependencies listed in `requirements.txt` using the package manager of your choice.
 
-## Usage
-
-1. Configure the system's settings, preferences, and notification options.
-2. Run the application using the command `python app.py`.
-3. Access EmailFlow through your web browser extension.
 
 ## License
 
