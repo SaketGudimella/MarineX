@@ -62,4 +62,4 @@ EmailFlow is an optimal email management suite designed to streamline your email
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+The project is licensed under the [MIT License](LICENSE).
