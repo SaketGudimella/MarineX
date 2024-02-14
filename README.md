@@ -1,4 +1,4 @@
-# EmailFlow: Optimal Email Management Suite
+# EmailFlow: Optimal Email Management System
 
 EmailFlow is an optimal email management suite designed to streamline your email experience. It automatically organizes, prioritizes, and optimizes your emails, helping you stay focused and efficient.
 
