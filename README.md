@@ -63,3 +63,11 @@ EmailFlow is an optimal email management suite designed to streamline your email
 ## License
 
 The project is licensed under the [MIT License](LICENSE).
+
+## Team Members 
+
+1. Saket Gudimella
+2. Vasan Lennin
+3. Archith Ramesh
+4. Aakash Suresh
+5. Siddharth Ramalingam 
