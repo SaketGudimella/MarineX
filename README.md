@@ -70,4 +70,4 @@ The project is licensed under the [MIT License](LICENSE).
 2. Vasan Lennin
 3. Archith Ramesh
 4. Aakash Suresh
-5. Siddharth Ramalingam 
+5. R Siddharth 
