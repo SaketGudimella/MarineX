@@ -1,1 +1,1 @@
-#1) OCR file updated
+# 1) OCR file updated
