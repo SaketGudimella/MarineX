@@ -1,4 +1,0 @@
-NLTK==3.6.3
-SpaCy==3.0.7
-scikit-learn==0.24.2
-tensorflow==2.5.0
