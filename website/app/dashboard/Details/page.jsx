@@ -81,33 +81,58 @@ export default function personalDetails() {
     }
   };
 
-  // Server-side function to query the Hugging Face model
-  const query = async (filename) => {
-    const response = await fetch("/api/query", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ filename }),
-    });
-
-    const result = await response.json();
-    return result;
+  const query = async (file) => {
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+  
+      const response = await fetch("/api/query", {
+        method: "POST",
+        body: formData,
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      console.error("Error uploading file:", error);
+      throw error;
+    }
   };
-
+  
   const handleFileUpload = async (event) => {
-    
-    const file = event.target.files[0];
-    if (file) {
+    try {
+      const file = event.target.files[0];
+      if (!file) {
+        console.log("No file selected");
+        return;
+      }
+  
+  
       const result = await query(file);
-      console.log(result);
+      console.log("Upload successful:", result);
+      
       setChatMessages((prevMessages) => [
         ...prevMessages,
-        { role: 'bot', content: `Gradio Result: ${JSON.stringify(result)}` },
+        { 
+          role: 'bot', 
+          content: `Gradio Result: ${JSON.stringify(result, null, 2)}` 
+        },
+      ]);
+    } catch (error) {
+      console.error("File upload failed:", error);
+      setChatMessages((prevMessages) => [
+        ...prevMessages,
+        { 
+          role: 'bot', 
+          content: `Error: ${error.message}` 
+        },
       ]);
     }
   };
-
   if (!user) return null;
 
   return (
@@ -147,7 +172,7 @@ export default function personalDetails() {
 
       <main className="max-w-7xl mx-auto p-6">
         <div className="bg-white shadow-md rounded-lg p-6">
-          <h2 className="text-lg font-semibold mb-4">Chat with the llm by speech</h2>
+          <h2 className="text-lg font-semibold mb-4">Chat with the Bot</h2>
           <div
             ref={chatContainerRef}
             className="overflow-auto max-h-80 border border-gray-300 rounded-lg p-4 mb-4"
